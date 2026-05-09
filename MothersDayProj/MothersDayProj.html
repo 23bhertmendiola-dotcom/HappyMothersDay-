@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Mother's Day</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #5f0f40, #9a031e, #fb8b24);
+      min-height: 100vh;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      padding: 40px;
+      max-width: 850px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      color: #ffffff;
+    }
+
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 35px;
+      color: #f5f5f5;
+    }
+
+    .highlight {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    .video-section {
+      margin-top: 20px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 20px;
+      border: 4px solid rgba(255,255,255,0.5);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #fff;
+      opacity: 0.9;
+    }
+
+    .heart {
+      color: red;
+      animation: heartbeat 1s infinite;
+      display: inline-block;
+    }
+
+    .code-lines {
+      margin-top: 25px;
+      background: rgba(0,0,0,0.25);
+      padding: 15px;
+      border-radius: 15px;
+      text-align: left;
+      overflow-x: auto;
+      font-family: monospace;
+      color: #d4ffea;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .card {
+        padding: 25px;
+      }
+
+      .message {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h1>Happy Mother's Day <span class="heart">❤</span></h1>
+
+      <p class="subtitle">
+        A special webpage made with love by your future computer engineer.
+      </p>
+
+      <p class="message">
+        Ma, maraming salamat sa bawat sakripisyo, sa bawat gabing nagpuyat ka, sa bawat aral, at sa bawat pagkakataong naging matatag ka para sa amin.
+        <br><br>
+        As someone who loves <span class="highlight">Computer Science</span>, I wanted to create something with my own hands using code.
+        This webpage may look simple, but every line here is made with appreciation and love for you.
+        <br><br>
+        You are the reason I continue learning, improving, and chasing my dreams.
+        Thank you for always believing in me.
+      </p>
+
+      <div class="video-section">
+        <!-- Replace mother'sday.mp4 with your own video file -->
+        <video controls>
+          <source src="mothersday.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="code-lines">
+&lt;mother&gt;<br>
+&nbsp;&nbsp;love = infinite;<br>
+&nbsp;&nbsp;care = unconditional;<br>
+&nbsp;&nbsp;support = always_true;<br>
+&lt;/mother&gt;
+      </div>
+
+      <p class="footer">
+        Made with love, code, and gratitude. ❤
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
